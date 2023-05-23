@@ -92,5 +92,97 @@ FROM
 WHERE
     salary BETWEEN 66000 AND 70000;
     
-15. 
+15. SELECT 
+    *
+FROM
+    employees
+WHERE
+    emp_no NOT BETWEEN 10004 AND 10012;
+    
+16. SELECT 
+    dept_name
+FROM
+    departments
+WHERE
+    dept_no BETWEEN 'd003' AND 'd006';
+    
+17. SELECT 
+    dept_name
+FROM
+    departments
+WHERE
+    dept_no IS NOT NULL;
+    
+18. SELECT 
+    *
+FROM
+    employees
+WHERE
+    gender = 'F' AND hire_date >= '2000-01-01';
+    
+19. SELECT 
+    *
+FROM
+    salaries
+WHERE
+    salary >= 150000;
+    
+20. SELECT DISTINCT
+    hire_date
+FROM
+    employees;
+    
+21. SELECT 
+    COUNT(*)
+FROM
+    salaries
+WHERE
+    salary >= 10000;
+    
+22. SELECT 
+    COUNT(*)
+FROM
+    dept_manager;
+    
+23. SELECT 
+    *
+FROM
+    employees
+ORDER BY hire_date DESC;
+
+24. SELECT 
+    salary, COUNT(salary) AS emps_with_same_salary
+FROM
+    salaries
+WHERE
+    salary > 80000
+GROUP BY salary
+ORDER BY salary;
+
+25. SELECT 
+    emp_no, avg(salary)
+FROM
+    salaries
+GROUP BY emp_no
+HAVING AVG(salary) > 120000;
+
+26. SELECT 
+    emp_no
+FROM
+    dept_emp
+WHERE
+    from_date > '2000-01-01'
+GROUP BY emp_no
+HAVING COUNT(from_date) > 1;
+
+27. SELECT 
+    *
+FROM
+    dept_emp
+LIMIT 100;
+
+
+
+
+
      
