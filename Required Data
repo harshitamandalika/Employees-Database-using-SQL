@@ -1,0 +1,27 @@
+1. Select the information from the “dept_no” column of the “departments” table.
+2. Select all data from the “departments” table.
+3. Select all people from the “employees” table whose first name is “Elvis”.
+4. Retrieve a list with all female employees whose first name is Kellie.
+5. Retrieve a list with all employees whose first name is either Kellie or Aruna.
+6. Retrieve a list with all female employees whose first name is either Kellie or Aruna.
+7. Use the IN operator to select all individuals from the “employees” table, whose first name is either “Denis”, or “Elvis”.
+8. Extract all records from the ‘employees’ table, aside from those with employees named John, Mark, or Jacob.
+9. Select the data about all individuals, whose first name starts with “Mark”; specify that the name can be succeeded by any sequence of characters.
+10. Retrieve a list with all employees who have been hired in the year 2000.
+11. Retrieve a list with all employees whose employee number is written with 5 characters, and starts with “1000”. 
+12. Extract all individuals from the ‘employees’ table whose first name contains “Jack”.
+13. Once you have done that, extract another list containing the names of employees that do not contain “Jack”.
+14. Select all the information from the “salaries” table regarding contracts from 66,000 to 70,000 dollars per year.
+15. 
+
+
+
+
+
+
+
+
+
+
+
+
