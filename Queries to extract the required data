@@ -1,0 +1,96 @@
+1. SELECT 
+    dept_no
+FROM
+    departments;
+    
+2. SELECT 
+    *
+FROM
+    departments;
+    
+3. SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name = 'Elvis';
+    
+4. SELECT 
+    *
+FROM
+    employees
+WHERE
+    gender = 'F' AND first_name = 'Kellie';
+    
+5. SELECT 
+    *
+FROM
+    employees
+WHERE
+     first_name = 'Kellie' OR first_name='Aruna';
+     
+6. SELECT 
+    *
+FROM
+    employees
+WHERE
+     gender = 'F' AND (first_name = 'Kellie' OR first_name='Aruna');
+     
+7. SELECT 
+    *
+FROM
+    employees
+WHERE
+     first_name IN ('Denis', 'Elvis');
+     
+8. SELECT 
+    *
+FROM
+    employees
+WHERE
+     first_name NOT IN ('John', 'Mark', 'Jacob');
+     
+9. SELECT 
+    *
+FROM
+    employees
+WHERE
+     first_name LIKE 'Mark%';
+     
+10. SELECT 
+    *
+FROM
+    employees
+WHERE
+     hire_date LIKE '%2000%';
+     
+11. SELECT 
+    *
+FROM
+    employees
+WHERE
+     emp_no LIKE '1000_';
+    
+12. SELECT 
+    *
+FROM
+    employees
+WHERE
+     first_name LIKE '%Jack%';
+     
+13. SELECT 
+    *
+FROM
+    employees
+WHERE
+     first_name NOT LIKE '%Jack%';
+     
+14. SELECT 
+    *
+FROM
+    salaries
+WHERE
+    salary BETWEEN 66000 AND 70000;
+    
+15. 
+     
