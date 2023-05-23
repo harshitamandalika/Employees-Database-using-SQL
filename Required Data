@@ -12,7 +12,45 @@
 12. Extract all individuals from the ‘employees’ table whose first name contains “Jack”.
 13. Once you have done that, extract another list containing the names of employees that do not contain “Jack”.
 14. Select all the information from the “salaries” table regarding contracts from 66,000 to 70,000 dollars per year.
-15. 
+15. Retrieve a list with all individuals whose employee number is not between ‘10004’ and ‘10012’.
+16. Select the names of all departments with numbers between ‘d003’ and ‘d006’.
+17. Select the names of all departments whose department number value is not null.
+18. Retrieve a list with data about all female employees who were hired in the year 2000 or after.
+19. Extract a list with all employees’ salaries higher than $150,000 per annum.
+20. Obtain a list with all different “hire dates” from the “employees” table.
+21. How many annual contracts with a value higher than or equal to $100,000 have been registered in the salaries table?
+22. How many managers do we have in the “employees” database?
+23. Select all data from the “employees” table, ordering it by “hire date” in descending order.
+24. Write a query that obtains two columns. The first column must contain annual salaries higher than 80,000 dollars.
+    The second column, renamed to “emps_with_same_salary”, must show the number of employees contracted to that salary. Lastly, sort the output by the first column.
+25. Select all employees whose average salary is higher than $120,000 per annum.
+26. Select the employee numbers of all individuals who have signed more than 1 contract after the 1st of January 2000.
+27. Select the first 100 rows from the ‘dept_emp’ table. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
