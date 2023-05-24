@@ -181,6 +181,66 @@ FROM
     dept_emp
 LIMIT 100;
 
+28. (1) SELECT 
+    *
+FROM
+    titles
+LIMIT 10;
+(2) INSERT INTO titles
+	(emp_no, 
+    title, 
+    from_date)
+VALUES
+	(999903, 'Senior Engineer', '1997-10-01');
+(3) SELECT 
+    *
+FROM
+    titles
+ORDER BY emp_no desc;
+
+29. INSERT INTO dept_emp
+	( emp_no, 
+	dept_no, 
+	from_date, 
+	to_date)
+VALUES
+	(999903, 
+    'd005', 
+    '1997-10-01', 
+    '9999-01-01');
+30. INSERT INTO departments
+	(dept_no, 
+    dept_name)
+VALUES
+	('d010', 
+    'Business Analysis');
+31. UPDATE 
+    departments
+SET 
+    dept_name='Data Analysis'
+WHERE 
+    dept_no = 'd010';
+32. DELETE FROM departments 
+WHERE
+    dept_no = 'd010';
+33. SELECT 
+    COUNT(DISTINCT dept_no)
+FROM
+    dept_emp;
+34. SELECT 
+    SUM(salary)
+FROM
+    salaries
+WHERE
+    from_Date > '1997-01-01';
+35. (1) SELECT 
+    MIN(emp_no)
+FROM
+    employees;
+    (2) 
+
+    
+    
 
 
 
