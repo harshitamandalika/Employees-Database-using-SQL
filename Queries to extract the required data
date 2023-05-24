@@ -237,7 +237,82 @@ WHERE
     MIN(emp_no)
 FROM
     employees;
-    (2) 
+    (2) SELECT 
+    MAX(emp_no)
+FROM
+    employees;
+36. SELECT 
+    AVG(salary)
+FROM
+    salaries
+WHERE
+    from_date > '1997-01-01';
+37. SELECT 
+    ROUND(AVG(salary),2)
+FROM
+    salaries
+WHERE
+    from_date > '1997-01-01';
+38. SELECT 
+    dept_no,
+    dept_name,
+    COALESCE(dept_no, dept_name) AS dept_info
+FROM
+    departments_dup
+ORDER BY dept_no;
+39. SELECT 
+    IFNULL(dept_no,'N/A') AS dept_no,
+    IFNULL(dept_name,'Department name not provided') AS dept_name,
+    COALESCE(dept_no, dept_name) AS dept_info
+FROM
+    departments_dup
+ORDER BY dept_no;
+40. SELECT 
+    dm.emp_no, em.first_name, em.last_name, dm.dept_no
+FROM
+    dept_manager AS dm
+INNER JOIN employees AS em 
+ON dm.emp_no = em.emp_no;
+41. SELECT 
+    dm.emp_no, em.first_name, em.last_name, dm.dept_no
+FROM
+    dept_manager AS dm
+LEFT JOIN employees AS em 
+ON dm.emp_no = em.emp_no
+WHERE
+    em.last_name = 'Markovitch';
+42. SELECT 
+    em.first_name, em.last_name, em.hire_date, tl.title
+FROM
+    employees AS em
+INNER JOIN titles AS tl 
+ON em.emp_no = tl.emp_no
+WHERE
+    em.first_name = 'Margareta'
+        AND em.last_name = 'Markovitch';
+43. SELECT 
+    dm.*, de.*
+FROM
+    dept_manager AS dm
+CROSS JOIN departments AS de 
+WHERE
+    de.dept_no = 'd009';
+44. SELECT 
+    em.*, dp.*
+FROM
+    employees AS em
+CROSS JOIN departments AS dp
+WHERE
+    em.emp_no BETWEEN 10001 AND 10010;
+45. SELECT 
+    em.gender, COUNT(em.emp_no) AS no_of_employees
+FROM
+    employees AS em
+INNER JOIN dept_manager AS dm 
+ON em.emp_no = dm.emp_no
+GROUP BY gender
+ORDER BY no_of_employees;
+46. 
 
     
     
